@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    background-color: #ded9d9; /* Warna abu-abu untuk kotak chat */
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2); /* Perbaiki nilai box-shadow untuk efek yang lebih dalam */
+    width: 400px;
+    max-width: 90%;
+    overflow: hidden;
+}
+
+.chat-box {
+    height: 400px;
+    padding: 10px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-box .message {
+    margin: 10px 0;
+}
+
+.chat-box .message.bot {
+    text-align: left;
+}
+
+.chat-box .message.user {
+    text-align: right;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    width: 80px;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button .bi {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+
+/* CSS untuk buble chat */
+.message {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+    max-width: 80%;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+/* CSS untuk buble chat bot */
+.message.bot {
+    background-color: #ffffff;
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+/* CSS untuk buble chat user */
+.message.user {
+    background-color: #036012;
+    color: #fff;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+    text-align: right;
+}
+
+/* Style untuk container chat box */
+#chat-box {
+    display: flex;
+    flex-direction: column;
+}
